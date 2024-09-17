@@ -8,7 +8,7 @@ console.log("Hi! I'm " + name +  "\n and I'm from" + city);
 console.log('Hi I\'m ' + name +   '\n and I\'m from'+ city);
 
 // Template literals
-console.log(`Hi! I'm ${ name }  
+console.log(`Hi! I'm ${ name }
     I'm from ${ city }`);
 
 const message = `Hi! I'm ${ name }  I'm from ${ city }`;
@@ -21,4 +21,3 @@ console.log(message.startsWith('Hi!'));
 console.log(message.indexOf("Victor"));
 console.log(message.split(' '));
 console.log("❤️  ❤️  ❤️ ".repeat(5));
-
