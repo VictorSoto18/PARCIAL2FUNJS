@@ -4,27 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundamentos JavaScript</title>
-</head>
-<body>
     <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #e9d5ff; /* Fondo morado claro */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
         .parent {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(4, 1fr);
-            grid-column-gap: 0px;
-            grid-row-gap: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Espacio entre el título y los botones */
+            align-items: center;
             width: 80vw;
             height: 80vh;
-            background-color: #bc44b4;
+            background-color: #bc44b4; /* Fondo de la sección */
             border: 2px solid #ea77dc;
+            border-radius: 10px; /* Bordes redondeados */
+            padding: 20px;
+            color: white; /* Texto en blanco */
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #6a0dad; /* Color morado */
+            color: white; /* Texto en blanco */
+            border: none; /* Sin borde */
+            border-radius: 5px; /* Bordes redondeados */
+            cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+            transition: background-color 0.3s; /* Transición suave */
+        }
+        button:hover {
+            background-color: #5a0b9b; /* Color al pasar el ratón */
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column; /* Alinear botones verticalmente */
+            gap: 10px; /* Espacio entre botones */
         }
     </style>
+</head>
+<body>
     <div class="parent">
         <h1>FUNDAMENTOS JavaScript</h1>
-        <div>
+        <div class="button-container">
             <button onclick="location.href='scissors.html'">Piedra, Papel o Tijera</button>
-        </div>
-        <div>
             <button onclick="location.href='index.html'">Bola</button>
         </div>
     </div>

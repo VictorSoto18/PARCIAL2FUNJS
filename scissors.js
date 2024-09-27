@@ -9,8 +9,10 @@ const play = () => {
     const choices = ['piedra', 'papel', 'tijeras'];
     const choiceMaq = choices[aleatorio];
 
-    divUser.innerText = `\n Tú elegiste: ${choiceUser}`;
-    divMaq.innerText = `La máquina eligió: ${choiceMaq}`;
+    // Muestra la elección del usuario
+    divUser.innerHTML = `Tú elegiste: <img src="${choiceUser}.jpg" alt="${choiceUser}">`;
+    // Muestra la elección de la máquina
+    divMaq.innerHTML = `La máquina eligió: <img src="${choiceMaq}.jpg" alt="${choiceMaq}">`;
 
     // Comparaciones para determinar el ganador
     if (choiceUser === choiceMaq) {
